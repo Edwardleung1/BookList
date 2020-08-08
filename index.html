@@ -7,6 +7,22 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
     />
+    <style>
+      .success,
+      .error {
+        color: white;
+        padding: 5px;
+        margin: 5px 0 15px 0;
+      }
+
+      .success {
+        background: green;
+      }
+
+      .error {
+        background: red;
+      }
+    </style>
     <title>Book List</title>
   </head>
   <body>
@@ -25,8 +41,10 @@
           <label for="isbn">ISBN#</label>
           <input type="text" id="isbn" class="u-full-width" />
         </div>
+        <div>
+          <input type="submit" value="Submit" class="u-full-width" />
+        </div>
       </form>
-      <hr />
       <table class="u-full-width">
         <thead>
           <tr>
